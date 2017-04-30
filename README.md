@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist kozhemin/yii2-insert-update-behavior "*"
+php composer.phar require kozhemin/yii2-insert-update-behavior:dev-master
 ```
 
 or add
 
 ```
-"kozhemin/yii2-insert-update-behavior": "*"
+"kozhemin/yii2-insert-update-behavior": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
