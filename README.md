@@ -43,14 +43,20 @@ Attach a new behavior to your model
 usage
 
 ```php
+   $dataInsert = [ ['title text', 'description'], ['title2 text', 'description2'], ['title3 text', 'descriptio3'] ];
+   //Optional column parameter
+   $column = ['title', 'description'];
+```
+
+```php
     //INSERT ON DUPLICATE KEY UPDATE
     $model = new Post();
-    $model->InsertUpdate($dataInsert)
+    $model->InsertUpdate($dataInsert, $column)
 ```
 or
 
 ```php
     //INSERT IGNORE
     $model = new Post();
-    $model->insertIgnore($dataInsert)
+    $model->insertIgnore($dataInsert, $column)
 ```
